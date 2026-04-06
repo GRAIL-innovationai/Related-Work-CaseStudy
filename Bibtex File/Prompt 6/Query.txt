@@ -1,0 +1,1 @@
+I am writing a paper on improving LLMs natural language inference capability using logical reasoner and logic grounding. Help me find some related work and give me the citations in bibtex format.

@@ -1,0 +1,1 @@
+I am writing a paper on network analysis methods for large heterogeneous networks with multiple types of nodes and relationships. Help me find some related work and give me the citations in bibtex format.

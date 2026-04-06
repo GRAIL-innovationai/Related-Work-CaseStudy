@@ -1,0 +1,341 @@
+% =============================================================================
+% Related Work: Decision Theories in LLM Decision-Making for High-Assurance Domains
+% =============================================================================
+% Organized by theme:
+%   1. LLM Decision-Making Behavior & Decision Theory
+%   2. Cognitive Biases & Behavioral Economics in LLMs
+%   3. LLMs in High-Assurance / Safety-Critical Domains
+%   4. Uncertainty Quantification & Calibration
+%   5. Foundational Decision Theory References
+% =============================================================================
+
+
+% ---------------------------------------------------------------------------
+% 1. LLM DECISION-MAKING BEHAVIOR & DECISION THEORY
+% ---------------------------------------------------------------------------
+
+@inproceedings{liu2025dellma,
+  title     = {{DeLLMa}: Decision Making Under Uncertainty with Large Language Models},
+  author    = {Liu, Ollie and Fu, Deqing and Yogatama, Dani and Neiswanger, Willie},
+  booktitle = {Proceedings of the International Conference on Learning Representations (ICLR)},
+  year      = {2025},
+  note      = {Spotlight Presentation},
+  url       = {https://arxiv.org/abs/2402.02392}
+}
+
+@article{ross2024llm_economicus,
+  title   = {{LLM} Economicus? {Mapping} the Behavioral Biases of {LLMs} via Utility Theory},
+  author  = {Ross, Jillian and Kim, Yoon and Lo, Andrew W.},
+  journal = {Proceedings of the Conference on Language Modeling (COLM)},
+  year    = {2024},
+  url     = {https://arxiv.org/abs/2408.02784}
+}
+
+@article{jia2024decision_behavior_framework,
+  title   = {Decision-Making Behavior Evaluation Framework for {LLMs} under Uncertain Context},
+  author  = {Jia, Jingru and Yuan, Zehua and Pan, Junhao and McNamara, Paul E. and Chen, Deming},
+  journal = {arXiv preprint arXiv:2406.05972},
+  year    = {2024},
+  url     = {https://arxiv.org/abs/2406.05972}
+}
+
+@article{leng2024folk_economics,
+  title   = {Folk Economics in the Machine: {LLMs} and the Emergence of Mental Accounting},
+  author  = {Leng, Yan},
+  journal = {SSRN},
+  year    = {2024},
+  url     = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4705130}
+}
+
+@article{bini2024behavioral_economics_ai,
+  title   = {Behavioral Economics of {AI}: {LLM} Biases and Corrections},
+  author  = {Bini, Pietro and others},
+  journal = {Journal of Finance},
+  year    = {2024},
+  note    = {Forthcoming},
+  url     = {https://afajof.org/management/viewp.php?n=185052}
+}
+
+@article{zong2026prospect_theory_fails,
+  title   = {Prospect Theory Fails for {LLMs}: Revealing Instability of Decision-Making under Epistemic Uncertainty},
+  author  = {Zong, Zheng and others},
+  journal = {arXiv preprint arXiv:2508.08992},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2508.08992}
+}
+
+@article{hintze2025probability_weighting_llms,
+  title   = {Probability Weighting in Large Language Models},
+  author  = {Hintze, Arend and others},
+  journal = {Computers in Human Behavior: Artificial Humans},
+  volume  = {6},
+  pages   = {100227},
+  year    = {2025},
+  url     = {https://pure.mpg.de/rest/items/item_3634266_3/component/file_3679425/content}
+}
+
+@article{fan2024llm_rational_game_theory,
+  title     = {Can Large Language Models Serve as Rational Players in Game Theory? {A} Systematic Analysis},
+  author    = {Fan, Caoyun and Chen, Jindou and Jin, Yaohui and He, Hao},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  year      = {2024}
+}
+
+@article{horton2023llm_simulated_economic_agents,
+  title   = {Large Language Models as Simulated Economic Agents: What Can We Learn from {Homo Silicus}?},
+  author  = {Horton, John J.},
+  journal = {NBER Working Paper No. 31122},
+  year    = {2023}
+}
+
+@article{echterhoff2024not_all_bias_bad,
+  title   = {Not All Bias is Bad: Balancing Rational Deviations and Cognitive Biases in Large Language Model Reasoning},
+  author  = {Echterhoff, Jessica and others},
+  journal = {arXiv preprint arXiv:2406.10999},
+  year    = {2024},
+  url     = {https://arxiv.org/abs/2406.10999}
+}
+
+
+% ---------------------------------------------------------------------------
+% 2. COGNITIVE BIASES & BEHAVIORAL ECONOMICS IN LLMs
+% ---------------------------------------------------------------------------
+
+@article{binz2023cognitive_psychology_gpt3,
+  title   = {Using Cognitive Psychology to Understand {GPT-3}},
+  author  = {Binz, Marcel and Schulz, Eric},
+  journal = {Proceedings of the National Academy of Sciences},
+  volume  = {120},
+  number  = {6},
+  pages   = {e2218523120},
+  year    = {2023}
+}
+
+@article{stella2023cognitive_psychology_extend,
+  title   = {Using Cognitive Psychology to Understand {GPT}-like Models Needs to Extend Beyond Human Biases},
+  author  = {Stella, Massimo and Hills, Thomas T. and Kenett, Yoed N.},
+  journal = {Proceedings of the National Academy of Sciences},
+  volume  = {120},
+  number  = {43},
+  pages   = {e2312911120},
+  year    = {2023}
+}
+
+@article{macmillan_scott2024irrationality,
+  title   = {(Ir)rationality and Cognitive Biases in Large Language Models},
+  author  = {Macmillan-Scott, Olivia and Musolesi, Mirco},
+  journal = {arXiv preprint arXiv:2402.09193},
+  year    = {2024},
+  url     = {https://arxiv.org/abs/2402.09193}
+}
+
+@article{hagendorff2023machine_psychology,
+  title   = {Machine Psychology: Investigating Emergent Capabilities and Behavior in Large Language Models Using Psychological Methods},
+  author  = {Hagendorff, Thilo},
+  journal = {arXiv preprint arXiv:2303.13988},
+  year    = {2023},
+  url     = {https://arxiv.org/abs/2303.13988}
+}
+
+@article{suri2024llm_heuristics,
+  title   = {Do Large Language Models Show Decision Heuristics Similar to Humans? {A} Case Study Using {GPT-3.5}},
+  author  = {Suri, Gaurav and Slater, Lily R. and Ziaee, Ali and Nguyen, Morgan},
+  journal = {arXiv preprint arXiv:2305.04400},
+  year    = {2023}
+}
+
+@article{aher2023turing_experiments,
+  title     = {Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies},
+  author    = {Aher, Gati V. and Arriaga, Rosa I. and Kalai, Adam Tauman},
+  booktitle = {Proceedings of the International Conference on Machine Learning (ICML)},
+  year      = {2023}
+}
+
+@article{itokawa2024cognitive_biases_survey,
+  title   = {Cognitive Biases in Large Language Models: A Survey and Mitigation Experiments},
+  author  = {Itokawa, Koki and others},
+  journal = {arXiv preprint arXiv:2412.00323},
+  year    = {2024},
+  url     = {https://arxiv.org/abs/2412.00323}
+}
+
+@article{mei2024llm_personality_economic_games,
+  title   = {A {Turing} Test of Whether {AI} Chatbots Are Behaviorally Similar to Humans},
+  author  = {Mei, Qiaozhu and Xie, Yutong and Yuan, Walter and Jackson, Matthew O.},
+  journal = {Proceedings of the National Academy of Sciences},
+  volume  = {121},
+  number  = {9},
+  pages   = {e2313925121},
+  year    = {2024}
+}
+
+
+% ---------------------------------------------------------------------------
+% 3. LLMs IN HIGH-ASSURANCE / SAFETY-CRITICAL DOMAINS
+% ---------------------------------------------------------------------------
+
+@article{hager2024limitations_clinical_decision,
+  title   = {Evaluation and Mitigation of the Limitations of Large Language Models in Clinical Decision-Making},
+  author  = {Hager, Paul and Jungmann, Friederike and Holland, Robbie and Bhagat, Kunal and Hubrecht, Inga and Knauer, Manuel and Vielhauer, Jakob and Makowski, Marcus and Braren, Rickmer and Kaissis, Georgios and Rueckert, Daniel},
+  journal = {Nature Medicine},
+  volume  = {30},
+  number  = {9},
+  pages   = {2613--2622},
+  year    = {2024},
+  doi     = {10.1038/s41591-024-03097-1}
+}
+
+@article{thirunavukarasu2023llm_medicine,
+  title   = {Large Language Models in Medicine},
+  author  = {Thirunavukarasu, Arun James and Ting, Darren Shu Jeng and Elangovan, Kabilan and Gutierrez, Laura and Tan, Ting Fang and Ting, Daniel Shu Wei},
+  journal = {Nature Medicine},
+  volume  = {29},
+  number  = {8},
+  pages   = {1930--1940},
+  year    = {2023}
+}
+
+@article{singhal2023llm_clinical_knowledge,
+  title   = {Large Language Models Encode Clinical Knowledge},
+  author  = {Singhal, Karan and Azizi, Shekoofeh and Tu, Tao and others},
+  journal = {Nature},
+  volume  = {620},
+  pages   = {172--180},
+  year    = {2023}
+}
+
+@article{ong2025llm_medication_safety,
+  title   = {Large Language Model as Clinical Decision Support System Augments Medication Safety in 16 Clinical Specialties},
+  author  = {Ong, Jasmine Chiat Ling and Jin, Liyuan and Elangovan, Kabilan and others},
+  journal = {Cell Reports Medicine},
+  volume  = {6},
+  number  = {10},
+  pages   = {102323},
+  year    = {2025},
+  doi     = {10.1016/j.xcrm.2025.102323}
+}
+
+@article{raza2025responsible_agentic_reasoning,
+  title   = {Responsible Agentic Reasoning and {AI} Agents: A Critical Survey},
+  author  = {Raza, Shaina and Sapkota, Ranjan and Karkee, Manoj and Emmanouilidis, Christos},
+  journal = {TechRxiv preprint},
+  year    = {2025},
+  doi     = {10.36227/techrxiv.175735299.97215847/v2}
+}
+
+@article{tanioka2025safe_trustworthy_healthcare_ai,
+  title   = {Towards Safe and Trustworthy Healthcare {AI}: Risk Assessment of Medical Dialogue Using {LLMs}},
+  author  = {Tanioka, Hiroshi},
+  journal = {Human-Centric Intelligent Systems},
+  year    = {2025},
+  doi     = {10.1007/s44230-025-00131-4}
+}
+
+
+% ---------------------------------------------------------------------------
+% 4. UNCERTAINTY QUANTIFICATION & CALIBRATION
+% ---------------------------------------------------------------------------
+
+@article{geng2025llm_uq_survey,
+  title   = {A Survey on Uncertainty Quantification for Large Language Models},
+  author  = {Geng, Chuanyang and others},
+  journal = {arXiv preprint arXiv:2506.07461},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2506.07461}
+}
+
+@article{baan2023uncertainty_nlg,
+  title   = {Uncertainty in Natural Language Generation: From Theory to Applications},
+  author  = {Baan, Joris and Daheim, Nico and Ilia, Evgenia and Ulmer, Dennis and Li, Haau-Sing and Fern{\'a}ndez, Raquel and Plank, Barbara and Sennrich, Rico and Zerva, Chrysoula and Aziz, Wilker},
+  journal = {arXiv preprint arXiv:2307.15703},
+  year    = {2023}
+}
+
+@article{halawi2024human_level_forecasting,
+  title   = {Approaching Human-Level Forecasting with Language Models},
+  author  = {Halawi, Danny and Zhang, Fred and Yueh-Han, Chen and Steinhardt, Jacob},
+  journal = {arXiv preprint arXiv:2402.18563},
+  year    = {2024}
+}
+
+
+% ---------------------------------------------------------------------------
+% 5. FOUNDATIONAL DECISION THEORY REFERENCES
+% ---------------------------------------------------------------------------
+
+@book{von_neumann1944theory_games,
+  title     = {Theory of Games and Economic Behavior},
+  author    = {Von Neumann, John and Morgenstern, Oskar},
+  year      = {1944},
+  publisher = {Princeton University Press}
+}
+
+@article{kahneman1979prospect_theory,
+  title   = {Prospect Theory: An Analysis of Decision under Risk},
+  author  = {Kahneman, Daniel and Tversky, Amos},
+  journal = {Econometrica},
+  volume  = {47},
+  number  = {2},
+  pages   = {263--291},
+  year    = {1979}
+}
+
+@article{tversky1992cumulative_prospect,
+  title   = {Advances in Prospect Theory: Cumulative Representation of Uncertainty},
+  author  = {Tversky, Amos and Kahneman, Daniel},
+  journal = {Journal of Risk and Uncertainty},
+  volume  = {5},
+  number  = {4},
+  pages   = {297--323},
+  year    = {1992}
+}
+
+@article{tversky1974heuristics_biases,
+  title   = {Judgment under Uncertainty: Heuristics and Biases},
+  author  = {Tversky, Amos and Kahneman, Daniel},
+  journal = {Science},
+  volume  = {185},
+  number  = {4157},
+  pages   = {1124--1131},
+  year    = {1974}
+}
+
+@article{fishburn1968utility_theory,
+  title   = {Utility Theory},
+  author  = {Fishburn, Peter C.},
+  journal = {Management Science},
+  volume  = {14},
+  number  = {5},
+  pages   = {335--378},
+  year    = {1968}
+}
+
+@book{kochenderfer2015decision_uncertainty,
+  title     = {Decision Making Under Uncertainty: Theory and Application},
+  author    = {Kochenderfer, Mykel J.},
+  year      = {2015},
+  publisher = {MIT Press}
+}
+
+@article{wei2022chain_of_thought,
+  title   = {Chain-of-Thought Prompting Elicits Reasoning in Large Language Models},
+  author  = {Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Xia, Fei and Chi, Ed and Le, Quoc V. and Zhou, Denny},
+  journal = {Advances in Neural Information Processing Systems},
+  volume  = {35},
+  pages   = {24824--24837},
+  year    = {2022}
+}
+
+@inproceedings{yao2023tree_of_thoughts,
+  title     = {Tree of Thoughts: Deliberate Problem Solving with Large Language Models},
+  author    = {Yao, Shunyu and Yu, Dian and Zhao, Jeffrey and Shafran, Izhak and Griffiths, Thomas L. and Cao, Yuan and Narasimhan, Karthik},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2023}
+}
+
+@inproceedings{shinn2024reflexion,
+  title     = {Reflexion: Language Agents with Verbal Reinforcement Learning},
+  author    = {Shinn, Noah and Cassano, Federico and Berman, Edward and Gopinath, Ashwin and Narasimhan, Karthik and Yao, Shunyu},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2024}
+}

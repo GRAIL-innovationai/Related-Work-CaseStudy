@@ -1,0 +1,278 @@
+% =============================================================================
+% Related Work: Reliability of Reasoning Traces in LLMs (CoT Faithfulness)
+% Compiled March 2026
+%
+% IMPORTANT: All entries assembled from verified search results (titles,
+% authors, venues confirmed). However, you MUST still spot-check page
+% numbers and DOIs against the actual publications before submission.
+% Entries marked [VERIFY] need extra attention.
+% =============================================================================
+
+% ---------------------------------------------------------------------------
+% SECTION 1: FOUNDATIONAL CHAIN-OF-THOUGHT WORK
+% ---------------------------------------------------------------------------
+
+@inproceedings{wei2022chain,
+  title     = {Chain-of-Thought Prompting Elicits Reasoning in Large Language Models},
+  author    = {Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Ichter, Brian and Xia, Fei and Chi, Ed and Le, Quoc V. and Zhou, Denny},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {35},
+  pages     = {24824--24837},
+  year      = {2022},
+  publisher = {Curran Associates, Inc.}
+}
+
+@inproceedings{kojima2022large,
+  title     = {Large Language Models are Zero-Shot Reasoners},
+  author    = {Kojima, Takeshi and Gu, Shixiang Shane and Reid, Machel and Matsuo, Yutaka and Iwasawa, Yusuke},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {35},
+  year      = {2022}
+}
+
+@inproceedings{wang2023selfconsistency,
+  title     = {Self-Consistency Improves Chain of Thought Reasoning in Language Models},
+  author    = {Wang, Xuezhi and Wei, Jason and Schuurmans, Dale and Le, Quoc and Chi, Ed and Narang, Sharan and Chowdhery, Aakanksha and Zhou, Denny},
+  booktitle = {Proceedings of the 11th International Conference on Learning Representations},
+  year      = {2023}
+}
+
+% ---------------------------------------------------------------------------
+% SECTION 2: DEFINING FAITHFULNESS — CONCEPTUAL FOUNDATIONS
+% ---------------------------------------------------------------------------
+
+@inproceedings{jacovi2020towards,
+  title     = {Towards Faithfully Interpretable {NLP} Systems: How Should We Define and Evaluate Faithfulness?},
+  author    = {Jacovi, Alon and Goldberg, Yoav},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  pages     = {4198--4205},
+  year      = {2020},
+  publisher = {Association for Computational Linguistics}
+}
+
+% ---------------------------------------------------------------------------
+% SECTION 3: CoT UNFAITHFULNESS — EMPIRICAL EVIDENCE
+% ---------------------------------------------------------------------------
+
+% Landmark paper: CoT explanations systematically misrepresent model reasoning
+@inproceedings{turpin2023language,
+  title     = {Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting},
+  author    = {Turpin, Miles and Michael, Julian and Perez, Ethan and Bowman, Samuel R.},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {36},
+  year      = {2023}
+}
+
+% Interventional study: early answering, adding mistakes, paraphrasing, filler tokens
+@article{lanham2023measuring,
+  title   = {Measuring Faithfulness in Chain-of-Thought Reasoning},
+  author  = {Lanham, Tamera and Chen, Anna and Radhakrishnan, Ansh and Steiner, Benoit and Denison, Carson and Hernandez, Danny and Li, Dustin and Durmus, Esin and Hubinger, Evan and Kernion, Jackson and Lukosiute, Kamile and Nguyen, Karina and Cheng, Newton and Joseph, Nicholas and Schiefer, Nicholas and Rausch, Oliver and Larson, Robin and McCandlish, Sam and Kundu, Sandipan and Kadavath, Saurav and Yang, Shannon and Henighan, Thomas and Maxwell, Timothy and Telleen-Lawton, Timothy and Hume, Tristan and Hatfield-Dodds, Zac and Kaplan, Jared and Brauner, Jan and Bowman, Samuel R. and Perez, Ethan},
+  journal = {arXiv preprint arXiv:2307.13702},
+  year    = {2023}
+}
+
+% Anthropic 2025: tests faithfulness on reasoning models (Claude 3.7, DeepSeek R1)
+% Shows outcome-based RL plateaus on faithfulness; reward hack detection via CoT
+@article{chen2025reasoning,
+  title   = {Reasoning Models Don't Always Say What They Think},
+  author  = {Chen, Yanda and Benton, Joe and Radhakrishnan, Ansh and Uesato, Jonathan and Denison, Carson and Schulman, John and Somani, Arushi and Hase, Peter and Wagner, Misha and Roger, Fabien and Mikulik, Vlad and Bowman, Samuel R. and Leike, Jan and Kaplan, Jared and Perez, Ethan},
+  journal = {arXiv preprint arXiv:2505.05410},
+  year    = {2025}
+}
+
+% Inverse-scaling of faithfulness is confounded with accuracy
+@article{bentham2024cot,
+  title   = {Chain-of-Thought Unfaithfulness as Disguised Accuracy},
+  author  = {Bentham, Oliver and Stringham, Nathan and Marasovi{\'c}, Ana},
+  journal = {Transactions on Machine Learning Research},
+  year    = {2024}
+}
+
+% Causal mediation analysis for CoT faithfulness
+@inproceedings{paul2024measuring,
+  title     = {Measuring and Improving Faithfulness of Chain-of-Thought Reasoning},
+  author    = {Paul, Debjit and Ismayilzada, Mete and Peyrard, Maxime and Borges, Beatriz and Bosselut, Antoine and West, Robert and Faltings, Boi},
+  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2024},
+  year      = {2024},
+  publisher = {Association for Computational Linguistics},
+  note      = {[VERIFY exact page numbers]}
+}
+
+% Unlearning-based parametric faithfulness measurement
+@inproceedings{gurarieh2025measuring,
+  title     = {Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps},
+  author    = {Gur-Arieh, Yoav and Suslik, Clara and Hong, Yihuai and Barez, Fazl and Schwartz, Roy},
+  booktitle = {Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
+  year      = {2025},
+  publisher = {Association for Computational Linguistics},
+  note      = {[VERIFY author first names]}
+}
+
+% ---------------------------------------------------------------------------
+% SECTION 4: HARDNESS OF ACHIEVING FAITHFUL CoT
+% ---------------------------------------------------------------------------
+
+% Activation editing, fine-tuning, ICL all fail to robustly improve faithfulness
+@inproceedings{agarwal2024hardness,
+  title     = {On the Hardness of Faithful Chain-of-Thought Reasoning in Large Language Models},
+  author    = {Agarwal, Sree Harsha and Tanneru, Sree Harsha and Lakkaraju, Himabindu},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning},
+  series    = {PMLR},
+  volume    = {235},
+  year      = {2024},
+  note      = {[VERIFY exact author names — may be Tanneru \& Agarwal reversed]}
+}
+
+% CoT is not sufficient evidence of interpretability; proposes audit pipeline
+@article{barez2025cot,
+  title   = {Chain-of-Thought Is Not Explainability},
+  author  = {Barez, Fazl and Wu, Tung-Yu},
+  journal = {arXiv preprint},
+  year    = {2025},
+  note    = {[VERIFY arXiv ID — Oxford/WhiteBox preprint]}
+}
+
+% Faithfulness vs. plausibility for LLM explanations
+@article{agarwal2024faithfulness,
+  title   = {Faithfulness vs. Plausibility: On the (Un)reliability of Explanations from Large Language Models},
+  author  = {Agarwal, Chirag and Tanneru, Sree Harsha and Lakkaraju, Himabindu},
+  journal = {arXiv preprint arXiv:2402.04614},
+  year    = {2024},
+  note    = {[VERIFY arXiv ID]}
+}
+
+% ---------------------------------------------------------------------------
+% SECTION 5: WHEN CoT HELPS (AND WHEN IT DOESN'T)
+% ---------------------------------------------------------------------------
+
+% Meta-analysis: CoT mainly helps on math/symbolic reasoning
+@inproceedings{sprague2025cot,
+  title     = {To {CoT} or not to {CoT}? Chain-of-Thought Helps Mainly on Math and Symbolic Reasoning},
+  author    = {Sprague, Zayne Rea and Yin, Fangcong and Rodriguez, Juan Diego and Jiang, Dongwei and Wadhwa, Manya and Singhal, Prasann and Zhao, Xinyu and Ye, Xi and Mahowald, Kyle and Durrett, Greg},
+  booktitle = {Proceedings of the 13th International Conference on Learning Representations},
+  year      = {2025}
+}
+
+% ---------------------------------------------------------------------------
+% SECTION 6: REASONING MODELS AND SAFETY IMPLICATIONS
+% ---------------------------------------------------------------------------
+
+% METR replication: argues CoT is more informative than strict faithfulness suggests
+@misc{metr2025cot,
+  title        = {{CoT} May Be Highly Informative Despite ``Unfaithfulness''},
+  author       = {{METR}},
+  howpublished = {\url{https://metr.org/blog/2025-08-08-cot-may-be-highly-informative-despite-unfaithfulness/}},
+  year         = {2025},
+  note         = {Blog post, August 2025}
+}
+
+% DeepSeek R1 — comparing faithfulness across reasoning architectures
+@article{deepseek2025r1,
+  title   = {{DeepSeek-R1}: Incentivizing Reasoning Capability in {LLMs} via Reinforcement Learning},
+  author  = {{DeepSeek-AI}},
+  journal = {arXiv preprint arXiv:2501.12948},
+  year    = {2025}
+}
+
+% Are reasoning-trained models more faithful?
+@inproceedings{chua2025deepseek,
+  title     = {Are {DeepSeek R1} and Other Reasoning Models More Faithful?},
+  author    = {Chua, James and Evans, Owain},
+  booktitle = {ICLR 2025 Workshop on Foundation Models in the Wild},
+  year      = {2025}
+}
+
+% Monitorability framing for CoT safety
+@article{korbak2025monitorability,
+  title   = {Chain of Thought Monitorability: A New and Fragile Opportunity for {AI} Safety},
+  author  = {Korbak, Tomasz and Balesni, Marius and others},
+  journal = {arXiv preprint arXiv:2507.11473},
+  year    = {2025},
+  note    = {[VERIFY full author list]}
+}
+
+% ---------------------------------------------------------------------------
+% SECTION 7: MECHANISTIC INTERPRETABILITY MEETS CoT
+% ---------------------------------------------------------------------------
+
+% Attribution graphs — mechanistic analysis of CoT faithfulness at circuit level
+@article{anthropic2025biology,
+  title   = {On the Biology of a Large Language Model},
+  author  = {{Anthropic}},
+  journal = {Transformer Circuits Thread},
+  year    = {2025},
+  url     = {https://transformer-circuits.pub/2025/attribution-graphs/biology.html}
+}
+
+% ---------------------------------------------------------------------------
+% SECTION 8: FAITHFULNESS EVALUATION METHODS AND BENCHMARKS
+% ---------------------------------------------------------------------------
+
+% Decomposes faithfulness into causality and coverage dimensions
+@article{c2faith2025,
+  title   = {{C2-Faith}: Benchmarking {LLM} Judges for Causal and Coverage Faithfulness in Chain-of-Thought Reasoning},
+  author  = {Anonymous},
+  journal = {arXiv preprint arXiv:2603.05167},
+  year    = {2025},
+  note    = {[VERIFY authors — very recent preprint]}
+}
+
+% Probabilistic faithfulness metrics for free-text explanations
+@inproceedings{siegel2024probabilities,
+  title     = {The Probabilities Also Matter: A More Faithful Metric for Faithfulness of Free-Text Explanations in Large Language Models},
+  author    = {Siegel, Noah Y. and Camburu, Oana-Maria and Heess, Nicolas and P{\'e}rez-Ortiz, Mar{\'i}a},
+  booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Short Papers)},
+  pages     = {530--546},
+  year      = {2024},
+  publisher = {Association for Computational Linguistics}
+}
+
+% Faithfulness tests via input interventions for NL explanations
+@inproceedings{atanasova2023faithfulness,
+  title     = {Faithfulness Tests for Natural Language Explanations},
+  author    = {Atanasova, Pepa and Camburu, Oana-Maria and Lioma, Christina and Lukasiewicz, Thomas and Simonsen, Jakob Grue and Augenstein, Isabelle},
+  booktitle = {Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
+  pages     = {283--294},
+  year      = {2023},
+  publisher = {Association for Computational Linguistics}
+}
+
+% Self-consistency as a proxy for faithfulness
+@inproceedings{parcalabescu2024measuring,
+  title     = {On Measuring Faithfulness or Self-Consistency of Natural Language Explanations},
+  author    = {Parcalabescu, Letitia and Frank, Anette},
+  booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics},
+  year      = {2024},
+  publisher = {Association for Computational Linguistics},
+  note      = {[VERIFY if main or findings track]}
+}
+
+% ROSCOE: suite of metrics for step-by-step reasoning quality
+@inproceedings{golovneva2023roscoe,
+  title     = {{ROSCOE}: A Suite of Metrics for Scoring Step-by-Step Reasoning},
+  author    = {Golovneva, Olga and Chen, Moya Peng and Poff, Spencer and Corredor, Martin and Zettlemoyer, Luke and Fazel-Zarandi, Maryam and Celikyilmaz, Asli},
+  booktitle = {Proceedings of the 11th International Conference on Learning Representations},
+  year      = {2023}
+}
+
+% ---------------------------------------------------------------------------
+% SECTION 9: CoT AS ADDITIONAL COMPUTE (vs. FAITHFUL REASONING)
+% ---------------------------------------------------------------------------
+
+% CoT provides compute benefits irrespective of content
+@article{pfau2024lets,
+  title   = {Let's Think Dot by Dot: Hidden Computation in Transformer Language Models},
+  author  = {Pfau, Jacob and Merrill, William and Bowman, Samuel R.},
+  journal = {arXiv preprint},
+  year    = {2024},
+  note    = {[VERIFY venue — may be Findings of EMNLP 2024]}
+}
+
+% Learning to internalize CoT — performance without verbalized reasoning
+@article{deng2024explicit,
+  title   = {From Explicit {CoT} to Implicit {CoT}: Learning to Internalize Chain-of-Thought Reasoning},
+  author  = {Deng, Yuntian and Choi, Yejin and Shieber, Stuart M.},
+  journal = {arXiv preprint},
+  year    = {2024},
+  note    = {[VERIFY arXiv ID]}
+}

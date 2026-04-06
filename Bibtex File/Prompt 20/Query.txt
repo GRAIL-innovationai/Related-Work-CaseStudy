@@ -1,0 +1,1 @@
+I am writing a paper on how to efficiently retrieve structured information from medical guideline to improve medical chatbot systems. Help me find some related work and give me the citations in bibtex format.

@@ -1,0 +1,215 @@
+% ============================================================
+% UNCERTAINTY ESTIMATION & ERROR MITIGATION IN LLMs
+% Related Work References
+%
+% WARNING: Verify all entries against original papers.
+% Author lists may be incomplete for papers with 30+ authors.
+% Page numbers and DOIs should be double-checked.
+% ============================================================
+
+% ============================================================
+% 1. SURVEYS & OVERVIEWS
+%    (Position your work relative to these)
+% ============================================================
+
+@inproceedings{xia2025survey,
+  title={A Survey of Uncertainty Estimation Methods on Large Language Models},
+  author={Xia, Zhiqiu and Xu, Jinxuan and Zhang, Yuqian and Liu, Hang},
+  booktitle={Findings of the Association for Computational Linguistics: ACL 2025},
+  pages={21381--21396},
+  year={2025},
+  address={Vienna, Austria},
+  publisher={Association for Computational Linguistics},
+  doi={10.18653/v1/2025.findings-acl.1101}
+}
+
+@article{he2025survey,
+  title={Survey of Uncertainty Estimation in Large Language Models: Sources, Methods, Applications, and Challenges},
+  author={He, Jianfeng and Yu, Linlin and Li, Changbin and Yang, Runing and Chen, Fanglan and others},
+  journal={ACM Computing Surveys},
+  year={2025},
+  publisher={ACM},
+  note={hal-04973361}
+}
+
+@article{huang2024survey,
+  title={A Survey of Uncertainty Estimation in {LLMs}: Theory Meets Practice},
+  author={Huang, Hsiu-Yuan and Yang, Yutong and Zhang, Zhaoxi and Lee, Sanwoo and Wu, Yunfang},
+  journal={arXiv preprint arXiv:2410.15326},
+  year={2024}
+}
+
+@article{shorinwa2024survey,
+  title={A Survey on Uncertainty Quantification of Large Language Models: Taxonomy, Open Research Challenges, and Future Directions},
+  author={Shorinwa, Ola and others},
+  journal={arXiv preprint arXiv:2412.05563},
+  year={2024}
+}
+
+@inproceedings{geng2024survey,
+  title={A Survey of Confidence Estimation and Calibration in Large Language Models},
+  author={Geng, Jiahui and Cai, Fengyu and Wang, Yuxia and Kober, Heinz and Gurevych, Iryna and Nakov, Preslav},
+  booktitle={Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  year={2024},
+  publisher={Association for Computational Linguistics}
+}
+
+% ============================================================
+% 2. SEMANTIC ENTROPY & HALLUCINATION DETECTION
+%    (Core UQ methods — if you're doing anything with
+%     multi-sample or meaning-space uncertainty, cite these)
+% ============================================================
+
+@inproceedings{kuhn2023semantic,
+  title={Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation},
+  author={Kuhn, Lorenz and Gal, Yarin and Farquhar, Sebastian},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2023}
+}
+
+@article{farquhar2024detecting,
+  title={Detecting Hallucinations in Large Language Models Using Semantic Entropy},
+  author={Farquhar, Sebastian and Kossen, Jannik and Kuhn, Lorenz and Gal, Yarin},
+  journal={Nature},
+  volume={630},
+  number={8017},
+  pages={625--630},
+  year={2024},
+  doi={10.1038/s41586-024-07421-0}
+}
+
+@article{kossen2024semantic,
+  title={Semantic Entropy Probes: Robust and Cheap Hallucination Detection in {LLMs}},
+  author={Kossen, Jannik and Han, Jiatong and Razzak, Muhammed and Schut, Lisa and Malik, Shreshth and Gal, Yarin},
+  journal={arXiv preprint arXiv:2406.15927},
+  year={2024}
+}
+
+@inproceedings{nikitin2024kernel,
+  title={Kernel Language Entropy: Fine-grained Uncertainty Quantification for {LLMs} from Semantic Similarities},
+  author={Nikitin, Alexander and Kossen, Jannik and Gal, Yarin and Marttinen, Pekka},
+  booktitle={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={8901--8929},
+  year={2024}
+}
+
+% ============================================================
+% 3. SELF-EVALUATION & VERBALIZED CONFIDENCE
+%    (If your paper involves LLMs assessing their own uncertainty)
+% ============================================================
+
+@article{kadavath2022language,
+  title={Language Models (Mostly) Know What They Know},
+  author={Kadavath, Saurav and Conerly, Tom and Askell, Amanda and Henighan, Tom and Drain, Dawn and Perez, Ethan and Schiefer, Nicholas and Hatfield-Dodds, Zac and DasSarma, Nova and Tran-Johnson, Eli and others},
+  journal={arXiv preprint arXiv:2207.05221},
+  year={2022}
+}
+
+@inproceedings{xiong2024can,
+  title={Can {LLMs} Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in {LLMs}},
+  author={Xiong, Miao and Hu, Zhiyuan and Lu, Xinyang and Li, Yifei and Fu, Jie and He, Junxian and Hooi, Bryan},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2024}
+}
+
+@inproceedings{tian2023just,
+  title={Just Ask for Calibration: Strategies for Eliciting Calibrated Confidence Scores from Language Models Fine-Tuned with Human Feedback},
+  author={Tian, Katherine and Mitchell, Eric and Yao, Huaxiu and Manning, Christopher D. and Finn, Chelsea},
+  booktitle={Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing},
+  year={2023},
+  publisher={Association for Computational Linguistics}
+}
+
+@inproceedings{lin2022teaching,
+  title={Teaching Models to Express Their Uncertainty in Words},
+  author={Lin, Stephanie and Hilton, Jacob and Evans, Owain},
+  booktitle={Transactions on Machine Learning Research},
+  year={2022}
+}
+
+@article{yang2024verbalized,
+  title={On Verbalized Confidence Scores for {LLMs}},
+  author={Yang, Daniel and Yao, Jiuhai and Mueller, Jonas},
+  journal={arXiv preprint arXiv:2412.14737},
+  year={2024}
+}
+
+% ============================================================
+% 4. CONFORMAL PREDICTION FOR LLMs
+%    (If your paper involves formal statistical guarantees)
+% ============================================================
+
+@inproceedings{quach2024conformal,
+  title={Conformal Language Modeling},
+  author={Quach, Victor and Fisch, Adam and Schuster, Tal and Yala, Adam and Sohn, Jae Ho and Jaakkola, Tommi S. and Barzilay, Regina},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2024}
+}
+
+@inproceedings{cherian2024llm,
+  title={Large Language Model Validity via Enhanced Conformal Prediction Methods},
+  author={Cherian, John J. and Gibbs, Isaac and Cand\`{e}s, Emmanuel J.},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2024}
+}
+
+@article{su2024api,
+  title={{API} Is Enough: Conformal Prediction for Large Language Models Without Logit-Access},
+  author={Su, Jiayuan and Luo, Jing and Wang, Hongwei and Cheng, Lu},
+  journal={arXiv preprint arXiv:2403.01216},
+  year={2024}
+}
+
+% ============================================================
+% 5. CALIBRATION FOUNDATIONS
+%    (Classical calibration work you'll likely need to cite)
+% ============================================================
+
+@inproceedings{guo2017calibration,
+  title={On Calibration of Modern Neural Networks},
+  author={Guo, Chuan and Pleiss, Geoff and Sun, Yu and Weinberger, Kilian Q.},
+  booktitle={Proceedings of the 34th International Conference on Machine Learning (ICML)},
+  pages={1321--1330},
+  year={2017}
+}
+
+% ============================================================
+% 6. HALLUCINATION SURVEYS
+%    (Broader context for error mitigation framing)
+% ============================================================
+
+@article{huang2025hallucination,
+  title={A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions},
+  author={Huang, Lei and Yu, Weijiang and Ma, Weitao and Zhong, Weihong and Feng, Zhangyin and Wang, Haotian and Chen, Qianglong and Peng, Weihua and Feng, Xiaocheng and Qin, Bing and others},
+  journal={ACM Computing Surveys},
+  year={2025}
+}
+
+@inproceedings{manakul2023selfcheckgpt,
+  title={{SelfCheckGPT}: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models},
+  author={Manakul, Potsawee and Liusie, Adian and Gales, Mark},
+  booktitle={Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing},
+  year={2023},
+  publisher={Association for Computational Linguistics}
+}
+
+% ============================================================
+% 7. UNCERTAINTY-AWARE DECISION MAKING
+%    (If your paper applies UQ to downstream tasks)
+% ============================================================
+
+@article{steyvers2025what,
+  title={What Large Language Models Know and What People Think They Know},
+  author={Steyvers, Mark and others},
+  journal={Nature Machine Intelligence},
+  year={2025},
+  doi={10.1038/s42256-024-00976-7}
+}
+
+@article{vishwakarma2024prune,
+  title={Prune 'n Predict: Optimizing {LLM} Decision-making with Conformal Prediction},
+  author={Vishwakarma, Harit and Mishler, Alan and Cook, Thomas and Dalmasso, Niccol\`{o} and Raman, Natraj and Ganesh, Sumitra},
+  journal={arXiv preprint arXiv:2501.00555},
+  year={2024}
+}

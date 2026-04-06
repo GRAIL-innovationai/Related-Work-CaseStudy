@@ -1,0 +1,1 @@
+I am writing a paper investigating reasons for compositional failures in Vision Language Models (VLMs). Help me find some related work and give me the citations in bibtex format.

@@ -1,0 +1,1 @@
+I am writing a paper on the reliability of reasoning traces in LLMs, with a specific focus on CoT and CoT-based reasoning. Help me find some related work and give me the citations in bibtex format.

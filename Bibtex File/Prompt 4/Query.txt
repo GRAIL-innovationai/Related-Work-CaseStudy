@@ -1,0 +1,1 @@
+I am writing a paper on explainability of LLMs on entity resolution using logic memory system. Help me find some related work and give me the citations in bibtex format.
