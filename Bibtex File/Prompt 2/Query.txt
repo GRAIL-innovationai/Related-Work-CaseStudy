@@ -1,0 +1,1 @@
+I am writing a paper on signed network analysis using methods like motif analysis and ERGMs. Help me find some related work and give me the citations in bibtex format.
