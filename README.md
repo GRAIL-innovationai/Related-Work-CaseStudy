@@ -23,11 +23,11 @@ Each model was given **24 research prompts** spanning diverse research areas. Th
 
 This benchmark evaluates models across **24 research prompts** covering diverse academic topics:
 
-├── README.md
+```
 ├── Bibtex File/
 │   ├── Prompt 1/
 │   │   ├── Query.txt          # The research prompt used
-│   │   ├── GRAIL.bib          # Generated BibTeX from Grail
+│   │   ├── GRAIL.bib          # Generated BibTeX from GRAIL
 │   │   ├── ChatGPT.bib        # Generated BibTeX from ChatGPT
 │   │   ├── Claude.bib         # Generated BibTeX from Claude
 │   │   ├── Gemini.bib         # Generated BibTeX from Gemini
@@ -36,10 +36,7 @@ This benchmark evaluates models across **24 research prompts** covering diverse 
 │   ├── Prompt 2/
 │   │   └── ...
 │   └── ... (Prompt 3–24)
-├── Summary for related work Hallucination Test - 24 Prompt.csv
-│   └── Detailed per-prompt, per-model verification results
-└── Summary for related work Hallucination Test - Summary.csv
-    └── Aggregated accuracy statistics across all prompts
+```
 
 *For complete research prompts, refer to the respective `Query.txt` file in each prompt's directory.*
 
