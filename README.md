@@ -36,6 +36,10 @@ This benchmark evaluates models across **24 research prompts** covering diverse 
 │   ├── Prompt 2/
 │   │   └── ...
 │   └── ... (Prompt 3–24)
+├── Summary for related work Hallucination Test - 24 Prompt.csv
+│   └── Detailed per-prompt, per-model verification results
+└── Summary for related work Hallucination Test - Summary.csv
+    └── Aggregated accuracy statistics across all prompts
 ```
 
 *For complete research prompts, refer to the respective `Query.txt` file in each prompt's directory.*
