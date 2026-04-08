@@ -19,7 +19,7 @@ Each model was given **24 research prompts** spanning diverse research areas. Th
 | **DeepSeek** | V3.2 | [chat.deepseek.com](https://chat.deepseek.com) |
 | **Qwen** | 3.5 Plus | [huggingface.co/Qwen](https://huggingface.co/Qwen) |
 
-## Research Prompts
+## Research Prompts & Repository Structure
 
 This benchmark evaluates models across **24 research prompts** covering diverse academic topics:
 
@@ -68,27 +68,6 @@ This benchmark evaluates models across **24 research prompts** covering diverse 
 - **Qwen** and **DeepSeek** exhibit severe hallucination issues, with low accuracy rates (35.32% and 63.78% respectively) that make them unreliable for this task.
 - **Gemini** prioritizes accuracy (93.04%) over citation volume, though with the smallest citation count among all models.
 
-## Repository Structure
-
-```
-├── README.md
-├── Bibtex File/
-│   ├── Prompt 1/
-│   │   ├── Query.txt          # The research prompt used
-│   │   ├── Grail.bib          # Generated BibTeX from GRAIL
-│   │   ├── ChatGPT.bib        # Generated BibTeX from ChatGPT
-│   │   ├── Claude.bib         # Generated BibTeX from Claude
-│   │   ├── Gemini.bib         # Generated BibTeX from Gemini
-│   │   ├── DeepSeek.bib       # Generated BibTeX from DeepSeek
-│   │   └── Qwen.bib           # Generated BibTeX from Qwen
-│   ├── Prompt 2/
-│   │   └── ...
-│   └── ... (Prompt 3–24)
-├── Summary for related work Hallucination Test - 24 Prompt.csv
-│   └── Detailed per-prompt, per-model verification results
-└── Summary for related work Hallucination Test - Summary.csv
-    └── Aggregated accuracy statistics across all prompts
-```
 
 ## Verification Methodology
 
